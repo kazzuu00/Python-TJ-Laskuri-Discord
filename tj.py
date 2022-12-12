@@ -8,6 +8,7 @@ import json
 
 token = "" # Aseta Discord botin Token tänne.
 target_date = datetime(2023, 12, 14) # Määritä palveluksen päättymisen päivä (Muoto: datetime(VVVV, KK, PV))
+palveluksen_alku = datetime(2023, 1, 2) # Määritä milloin sinun palveluksen alkamisen päivä on (Muoto: datetime(VVVV, KK, PV))
 palvelusaika = 347 # Aseta luku kuinka pitkä sinun armeijan palvelusaika on.
 nimi = "Matti Meikäläinen" # Sinun nimi.
 palveluspaikka = "Karjalan Prikaatissa" # Palveluspaikkasi taivutettuna sopivasti.
@@ -26,7 +27,7 @@ days_left = int(delta.days) + 1
 days_elapsed = int(days_left) / palvelusaika
 percent_complete = 100 - days_elapsed * 100
 
-target_date2 = datetime(2023, 1, 2)
+target_date2 = palveluksen_alku
 delta2 = target_date2 - current_date
 days_until = int(delta2.days) + 1
 
