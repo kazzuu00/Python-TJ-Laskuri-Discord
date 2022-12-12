@@ -5,7 +5,6 @@ import time
 import asyncio
 import json
 # Bobb3ll1 / Armeijan palvelusaika laskin, TJ-Laskuri.
-# Voit muokkaa vapaasti koodia.
 
 token = "" # Aseta Discord botin Token tänne.
 target_date = datetime(2023, 12, 14) # Määritä palveluksen päättymisen päivä (Muoto: datetime(VVVV, KK, PV))
