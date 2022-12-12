@@ -5,7 +5,7 @@
 
 
 
-###### **Nykyiset ominaisuudet:**
+## **Nykyiset ominaisuudet:**
   • Muokattavuus heti tiedoston alussa. <br />
   • Helposti muokattavissa oleva palvelusaika, viestin kanava, viestin aika ja palveluspaikka. <br />
   • Päivärahan laskeminen joka esiintyy palveluksen aikana lähetettävässä viestissä. <br />
