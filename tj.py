@@ -79,6 +79,7 @@ async def tj():
             embed = discord.Embed (title = '`😄📅` **TJ Laskuri.** 🥳', description = desc)
             embed.set_thumbnail (url = 'https://i.imgur.com/2yjXFdG.jpg')
             await channel.send(embed=embed)
+            await client.close()
 
         if days_until < 0:
             filename = f'päiväraha.json'
