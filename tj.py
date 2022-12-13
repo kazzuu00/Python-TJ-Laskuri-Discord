@@ -74,7 +74,6 @@ async def tj():
             
             Tänään on erikoinen päivä. On ehkä juhlimisen aihetta, {nimi} pääsee tänään asepalveluksesta reserviin!
             {nimi} on suorittanut {palvelusaika} päivää asepalvelusta ja on **TJ:** `0`!
-            Ja hän on saanut yhteensä `2754.2` Eur päivärahaa.
             """
             embed = discord.Embed (title = '`😄📅` **TJ Laskuri.** 🥳', description = desc)
             embed.set_thumbnail (url = 'https://i.imgur.com/2yjXFdG.jpg')
