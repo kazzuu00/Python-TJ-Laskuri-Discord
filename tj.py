@@ -19,18 +19,6 @@ intents = discord.Intents.default()
 intents.members=True
 client = discord.Client(command_prefix = '!', intents=intents)
 
-# Matikkaa laskien palvelusaikaa.
-current_date = datetime.now()
-delta = target_date - current_date
-days_left = int(delta.days) + 1
-
-days_elapsed = int(days_left) / palvelusaika
-percent_complete = 100 - days_elapsed * 100
-
-target_date2 = palveluksen_alku
-delta2 = target_date2 - current_date
-days_until = int(delta2.days) + 1
-
 # Muodostetaan yhteys Discordiin.
 @client.event
 async def on_ready():
@@ -39,7 +27,18 @@ async def on_ready():
 
 @tasks.loop(seconds=60)
 async def tj():
+    current_date = datetime.now()
+    delta = target_date - current_date
+    days_left = int(delta.days) + 1
+
+    days_elapsed = int(days_left) / palvelusaika
+    percent_complete = 100 - days_elapsed * 100
+
+    target_date2 = palveluksen_alku
+    delta2 = target_date2 - current_date
+    days_until = int(delta2.days) + 1
     aika = time.strftime("%H:%M")
+    
     if aika == f"{viesti_aika}":
         if days_until >= 1:
             channel = client.get_channel(kanava_id)
