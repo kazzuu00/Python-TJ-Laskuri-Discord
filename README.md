@@ -12,3 +12,7 @@
   
   
   Sinä saat vapaasti muokkaa tätä koodia niin paljon kun haluat.
+
+
+Esimerkki viesti minun pyörittämästä laskurista (Aamuja 1/23)
+![kuva](https://user-images.githubusercontent.com/71322362/207483417-c6f1067a-d1cd-4ea6-84df-7bcfba846923.png)
